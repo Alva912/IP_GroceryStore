@@ -1,0 +1,196 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+div {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+ul {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Window Layout */
+#mainpage {
+  height: 972px;
+}
+@media (max-width: 1919.9px) {
+  #mainpage {
+    height: 648px;
+  }
+}
+@media (max-width: 1279.9px) {
+  #mainpage {
+    height: 584px;
+  }
+}
+#mainpage .container {
+  display: flex;
+  height: inherit;
+}
+#mainpage .container > div {
+  display: flex;
+  flex-direction: column;
+}
+#mainpage .container .left-frame {
+  flex: 3 0 2px;
+  background-color: tan;
+}
+#mainpage .container .right-frame {
+  flex: 4 0 2px;
+}
+#mainpage .container .right-frame .right-top-frame {
+  flex: 3 0 2px;  
+}
+#mainpage .container .right-frame .right-bottom-frame {
+  flex: 4 0 2px;
+}
+
+/* Menu Map */
+.menu-map .menu-head {
+  font: 900 x-large Arial;
+  text-align: start;
+  color: #4eb0bd;
+}
+@media (max-width: 1919.9px) {
+  .menu-map .menu-head {
+    font-size: larger;
+  }
+}
+@media (max-width: 1279.9px) {
+  .menu-map .menu-head {
+    font-size: large;
+  }
+}
+.menu-map .menu-body > h3 > a {
+  font: 600 larger Arial;
+}
+@media (max-width: 1919.9px) {
+  .menu-map .menu-body > h3 > a {
+    font-size: large;
+  }
+}
+@media (max-width: 1279.9px) {
+  .menu-map .menu-body > h3 > a {
+    font-size: medium;
+  }
+}
+.menu-map .menu-body > h3 > a > span {
+  font-size: 18px;
+}
+.menu-map .menu-body > ul {
+  padding-left: 1rem;
+  padding-right: 0.2rem;
+  font: 500 large Arial;
+}
+@media (max-width: 1919.9px) {
+  .menu-map .menu-body > ul {
+    font-size: medium;
+  }
+}
+@media (max-width: 1279.9px) {
+  .menu-map .menu-body > ul {
+    font-size: smaller;
+  }
+}
+.menu-map .menu-body > ul * {
+  transition: all 0.3s 0.1s;
+  -moz-transition: all 0.3s 0.1s;
+  -ms-transition: all 0.3s 0.1s;
+  -o-transition: all 0.3s 0.1s;
+  -webkit-transition: all 0.3s 0.1s;
+  word-spacing: -10px;
+}
+.menu-map .menu-body > ul > li > a,
+.menu-map .menu-body > ul > li > ul > li a {
+  display: inline-block;
+  word-spacing: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.menu-map .menu-body > ul > li:hover > a {
+  border-radius: 5px 0 0 5px;
+  background-color: #4eb0bd;
+  color: #fff;
+}
+.menu-map .menu-body > ul > li > a > span {
+  font-size: 12px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.menu-map .menu-body > ul > li:hover > a > span {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+.menu-map .menu-body > ul > li > ul {
+  display: inline-flex;
+  background-color: #4eb0bd;
+  border-radius: 0 5px 5px 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+}
+.menu-map .menu-body > ul > li:hover > ul {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.menu-map .menu-body > ul > li > ul > li a {
+  color: #fff;
+}
+.menu-map .menu-body > ul > li:hover > ul > li a:hover {
+  background-color: #3fcfe2;
+}
+
+/* Product Display */
+.product-display > div:nth-of-type(2) {
+  height: 180px;
+}
+
+/* Shopping cart */
+.shopping-cart > div:nth-of-type(2) * {
+  font: 500 large Arial;
+}
+@media (max-width: 1919.9px) {
+  .shopping-cart > div:nth-of-type(2) * {
+    font-size: medium;
+  }
+}
+@media (max-width: 1279.9px) {
+  .shopping-cart > div:nth-of-type(2) * {
+    font-size: small;
+  }
+}
+.shopping-cart > div:nth-of-type(2) {
+  height: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.shopping-cart .cart-row tr{
+  display: flex;
+  justify-content: space-between;
+}
